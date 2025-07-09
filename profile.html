@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Профиль пользователя</title>
+  <link rel="stylesheet" href="profile.css" />
+</head>
+<body>
+  <div class="profile-container">
+    <h1>Профиль пользователя</h1>
+    <form id="profile-form" enctype="multipart/form-data">
+    <div class="avatar-wrapper">
+        <img id="avatar-preview" src="default-avatar.png" alt="Avatar" />
+        <input type="file" id="avatar-input" accept="image/*" />
+    </div>
+
+    <label for="name">Имя</label>
+    <input type="text" id="name" name="name" required />
+
+    <label for="email">Почта</label>
+    <input type="email" id="email" name="email" required />
+
+    <label for="password">Пароль</label>
+    <div class="password-wrapper">
+        <input type="password" id="password" name="password" required minlength="6" />
+        <button type="button" id="toggle-password" title="Показать/Скрыть пароль">👁️</button>
+    </div>
+
+    <label for="password-confirm">Повторите пароль</label>
+    <div class="password-wrapper">
+        <input type="password" id="password-confirm" name="password-confirm" required minlength="6" />
+        <button type="button" id="toggle-password-confirm" title="Показать/Скрыть пароль">👁️</button>
+    </div>
+
+        <button type="submit">Сохранить</button>
+    </form>
+    <button id="logout-btn">Выйти</button>
+  </div>
+
+  <script src="profile.js"></script>
+</body>
+</html>

@@ -1,0 +1,174 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif
+}
+html,
+body{
+    height: 100%;
+}
+
+#form-add-teammate{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 480px;
+    height: 800px;
+    padding-top: 64px;
+    padding-bottom: 64px;
+    overflow: scroll;
+}
+
+.modal-content{
+    background: #ffffff;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 16px rgba(0, 0, 0, 0.15);
+    min-width: 320px;
+    max-width: 90vw;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.base-fill {
+    display: flex;
+    flex-direction: column; 
+    margin-bottom: 1rem;
+    width: 100%;
+    max-width: 600px; 
+  }
+  
+  .base-fill > span {
+    margin-bottom: 6px;
+    font-weight: 600;
+  }
+  
+  .base-fill > input {
+    padding: 10px 14px;
+    border: 1px solid #d5d7da;
+    border-radius: 0.5rem;
+    font-size: 14px;
+    width: 100%; 
+    box-sizing: border-box;
+  }
+  
+
+.modal{
+    display: flex;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+}
+
+.required{
+    color: rgba(127, 86, 217, 1);
+}
+
+input{
+    outline: none;
+    padding: 10px 14px;
+    border: 1px solid #d5d7da;
+    border-radius: 0.5rem;
+}
+
+textarea{
+    outline: none;
+    padding: 10px 14px;
+    border: 1px solid #d5d7da;
+    border-radius: 0.5rem;
+}
+
+.auth-buttons{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.auth-buttons .login {
+    background: white;
+    border: 1px solid #d0d0d0;
+    border-radius: 8px;
+    padding: 8px 16px;
+    font-weight: 500;
+    cursor: pointer;
+}
+  
+.auth-buttons .signup {
+    background: #7c3aed;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 16px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.buttons-teammate{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  
+}
+  .buttons-teammate > button{
+    width: 100%;
+}
+
+.btn-open-pos{
+    width: 157px;
+    height: 48px;
+    border-radius: 8px;
+    box-shadow: 
+      0px 1px 2px 0px rgba(10, 13, 18, 0.05),
+      0px -2px 0px 0px rgba(10, 13, 18, 0.05),
+      0px 0px 0px 1px rgba(10, 13, 18, 0.18);
+    border: 2px solid transparent;
+    
+  
+    background-image:
+        linear-gradient(#7F4DE1, #7F4DE1), /* основной фон */
+        linear-gradient(to bottom, rgb(158, 35, 235), rgb(174, 0, 255)); /* бордер */
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+}
+
+.btn-about{
+    width: 110px;
+    height: 48px;
+    border-radius: 8px;
+    background-color: #FFFFFF;
+    border: 1px solid #D5D7DA;
+    box-shadow: 
+      0px 1px 2px 0px rgba(10, 13, 18, 0.05),   
+      0px -2px 0px 0px rgba(10, 13, 18, 0.05),  
+      0px 0px 0px 1px rgba(10, 13, 18, 0.18);   
+}
+
+.btn-about > p{
+    color: #414651;
+    font-size: 16px;
+    line-height: 24px;
+    
+}
+
+.btn-open-pos > p{
+    color:rgba(255, 255, 255, 1);
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.auth-buttons .auth-toggle {
+    background-color: #7e22ce; 
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .auth-buttons .auth-toggle.active {
+    background-color: white;
+    color: #7e22ce;
+    border: 2px solid #7e22ce;
+  }

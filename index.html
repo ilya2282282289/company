@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register</title>
+  <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <div id="modal-add-teammate" class="modal">
+        <form id="form-register" class="modal-content">
+        
+            <div class="auth-buttons">
+                <button type="button" class="signup auth-toggle active">Sign up</button>
+                <button type="button" class="login auth-toggle">Log in</button>
+            </div>
+
+            <label for="name" class="base-fill" id="field-name">
+                <span>Name <span class="required">*</span></span>
+                <input id="name" type="text" name="name" required placeholder="Enter name"/>
+            </label>
+            
+            <label for="email" class="base-fill" id="field-email">
+                <span>Email <span class="required">*</span></span>
+                <input id="email" type="email" name="email" required placeholder="Enter email">
+            </label>
+            
+            <label for="password" class="base-fill" id="field-password">
+                <span>Password <span class="required">*</span></span>
+                <input id="password" type="password" name="password" required placeholder="Enter password">
+            </label>
+            
+            <label for="repeat_password" class="base-fill" id="field-repeat">
+                <span>Repeat password <span class="required">*</span></span>
+                <input id="repeat_password" type="password" name="repeat_password" required placeholder="Repeat password">
+            </label>
+
+            <p id="error" style="color: red; display: none; margin-top: -10px;"></p>
+
+            <div class="buttons-teammate">
+                <button type="submit" id="submit-text" class="btn-open-pos"><p>Confirm</p></button>
+                <button type="reset" id="btn-close-modal" class="btn-about"><p>Clear</p></button>
+            </div>
+        </form>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>

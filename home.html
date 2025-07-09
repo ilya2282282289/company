@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+            />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>Company</title>
+        <link rel="stylesheet" href="./home.css">
+    </head>
+    <body>
+        <header>
+            <div class="wrapper">
+              <div class="navbar">
+                
+                <div class="nav-left">
+                  <div class="logo">
+                    <img src="https://play-lh.googleusercontent.com/KId4hiceGJEIPeZWs3Mgfu3VrONU6TSeqLXxDlUjA-m7Ec3ChAYtPR2k_9hf1-6vhDB6=w600-h300-pc0xffffff-pd" height="40">
+                    <h2>Untitled UI</h2>
+                  </div>
+          
+                  <nav class="menu">
+                    <a href="">Products</a>
+                    <a href="">Services</a>
+                    <a href="">Pricing</a>
+                    <a href="">Resources</a>
+                    <a href="">About</a>
+                  </nav>
+                </div>
+          
+                <div class="auth-buttons">
+                    <h3 class="favorit">Favorits: 0</h3>
+                    <button class="log-out">Log out</button>
+                    <button id="profile-btn" title="Профиль" style="border:none; background:transparent; cursor:pointer;">
+                        <img id="profile-avatar" src="assets/default-avatar.png" alt="Профиль" style="width:36px; height:36px; border-radius:50%;" />
+                    </button>
+                      
+                </div>
+                
+          
+              </div>
+            </div>
+        </header>
+          
+        <main>
+            <section class="section-about">
+                <p class="subheading">About us</p>
+                <h2>About the company</h2>
+                <p class="supporting-text">Learn more about the company and the team behind it.</p>
+            </section>
+            
+            <section class="section-metrics">
+                <img src="https://images.unsplash.com/photo-1660513924321-d9142645a41d?q=80&w=2021&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" width="592" height="560">
+                <div class="contanier-metrics">
+                    <div class="content">
+                        <p>Build better, launch faster</p>
+                        <h2>We’re only just getting started on our journey</h2>
+                    </div>
+                    <div class="content1">
+                        <div class="card">
+                            <article>400+</article>
+                            <p>Projects completed</p>
+                        </div>
+
+                        <div class="card">
+                            <article>600%</article>
+                            <p>Return on investment</p>
+                        </div>
+
+                        <div class="card">
+                            <article>10k</article>
+                            <p>Global downloads</p>
+                        </div>
+                        
+                        <div class="card">
+                            <article>200+</article>
+                            <p>5-star reviews</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <div class="social-proof">
+            <p>From startups to the world’s largest companies</p>
+            <div class="logos">
+                <div class="logomark">
+                    <img src="assets/logo1.png" width="50" height="50">
+                    <h4>OdeaoLabs</h4>
+                </div>
+                <div class="logomark">
+                    <img src="assets/logo2.png"  width="50" height="50">
+                    <h4>Kintsugi</h4>
+                </div>
+                <div class="logomark">
+                    <img src="assets/logo3.png" width="50" height="50">
+                    <h4>StackEd Lab</h4>
+                </div>
+                <div class="logomark">
+                    <img src="assets/logo4.png" width="50" height="50">
+                    <h4>Magnolia</h4>
+                </div>
+                <div class="logomark">
+                    <img src="assets/logo5.png" width="50" height="50">
+                    <h4>Warpspeed</h4>
+                </div>
+                <div class="logomark">
+                    <img src="assets/logo6.png" width="50" height="50">
+                    <h4>Sisyphus</h4>
+                </div>
+            </div>
+        </div>
+
+        <section class="section-team">
+            <div class="contanier-section">
+                <div class="sub-head-text">
+                    <p>We’re hiring!</p>
+                    <h2>Meet our team</h2>
+                    <h5>Our philosophy is simple — hire a team of diverse, passionate people and foster<br> a culture that empowers you to do your best work.</h5>
+                </div>
+                <div class="buttons-section">
+                    <button id="btn-about" class="btn-about"><p>About us</p></button>
+                    <button id ="btn-add-teammate" class="btn-open-pos"><p>Add Teammate</p></button>
+                </div>
+                <div id="modal-add-teammate" class=modal>
+                    <form id="form-add-teammate" class="modal-content">
+                        <label for="avatar" class="base-fill">
+                            <span>Avatar <span class="required">*</span></span>
+                            <input id="avatar" type="text" name="avatar" required  placeholder="Enter avatar URL"/>
+                        </label>
+
+                        <label for="name" class="base-fill">
+                            <span>Name <span class="required">*</span></span>
+                            <input id="name" type="text" name="name" required placeholder="Enter name"/>
+                        </label>
+                            
+                        <label for="position" class="base-fill">
+                            <span id="position-text">Position <span class="required">*</span></span>
+                            <input id="position" type="text" name="position" required placeholder="Enter position">
+                        </label>
+
+                        <label for="description" class="base-fill">
+                            <span id="description-text">Description <span class="required">*</span></span>
+                            <textarea id="description" type="text" name="description" required placeholder="Enter description"></textarea>
+                        </label>
+
+                        <label for="x_url" class="base-fill">
+                            <span id="x_text">X URL</span>
+                            <input id="x_url" type="text" name="x_url"  placeholder="Enter x url">
+                        </label>
+
+                        <label for="in_url" class="base-fill">
+                            <span id="in_text">in URL</span>
+                            <input id="in_url" type="text" name="in_url"  placeholder="Enter in url">
+                        </label>
+
+                        <label for="basketball-url" class="base-fill">
+                            <span id="basketball-text">Basketball URL</span>
+                            <input id="backetball-url" type="text" name="backetball_url"  placeholder="Enter basketball url">
+                        </label>
+                        <div class="buttons-teammate">
+                            <button typsubmite="" id="submit-text" class="btn-open-pos"><p>Add</p></button>
+                            <button type="reset" id="btn-close-modal" class="btn-about"><p>Reset</p></button>
+                        </div>
+                    </form>
+                </div>
+                
+                <div class="main-layout">
+                    <!-- Левая панель фильтров -->
+                    <div class="main-layout">
+                        <div class="filters-panel">
+                      
+                        </div>
+                      
+                        <div class="cards-section">
+                          
+                      
+                          <div id="card-container" class="grid-three">
+                            <!-- Здесь будут рендериться карточки -->
+                          </div>
+                        </div>
+                      </div>
+                      
+                
+                    <!-- Правая часть с кнопками и карточками -->
+                    <div class="cards-section">
+                        <div class="view-toggle">
+                            <h3>Living Room</h3>
+                            <div class="view-buttons">
+                              <button id="view-large-grid" class="view-btn">🔳</button>
+                              <button id="view-small-grid" class="view-btn">🔲</button>
+                              <button id="view-list" class="view-btn">📄</button>
+                              <button id="view-row" class="view-btn">📏</button>
+                            </div>
+                          </div>
+                          
+                        <div id="card-container" class="grid-three">
+                            <div class="metrics-card"></div>
+                        </div>
+                    </div>
+                </div>
+                
+        </section>
+        <div class="cats-text">
+            <p>Случайный факт о кошках:  </p>
+            <br>
+            <p class="random-cats loading"></p>
+        </div>
+        
+
+        <footer class="footer">
+            <section class="footer-section">
+                <div class="footer-links">
+                    <div class="section1">
+                        <div class="logo-and-text">
+                            <div class="logotip">
+                                <img src="https://play-lh.googleusercontent.com/KId4hiceGJEIPeZWs3Mgfu3VrONU6TSeqLXxDlUjA-m7Ec3ChAYtPR2k_9hf1-6vhDB6=w600-h300-pc0xffffff-pd" height="40">
+                                <h2>Untitled UI</h2>
+                            </div>
+                            <p>Design amazing digital experiences that create more happy in the world.</p>
+                            <div class="rating-badge">
+                                <img class="zerkal" src="assets/pero.png" width="48" height="64">
+                                <div class="stars-text">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <h5>Best Design Tool</h5>
+                                    <p>2,000+ reviews</p>
+                                </div>
+                                <img src="assets/pero.png" width="48" height="64">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="links">
+                        <div class="footer-column">
+                            <p>Product</p>
+                            <a>Overview</a>
+                            <a>Features</a>
+                            <a class="new">Solutions<p>New</p></a>
+                            <a>Tutorials</a>
+                            <a>Pricing</a>
+                            <a>Releases</a>
+                        </div>
+
+                        <div class="footer-column">
+                            <p>Company</p>
+                            <a>About us</a>
+                            <a>Careers</a>
+                            <a>Press</a>
+                            <a>News</a>
+                            <a>Media kit</a>
+                            <a>Contact</a>
+                        </div>
+
+                        <div class="footer-column">
+                            <p>Resources</p>
+                            <a>Blog</a>
+                            <a>Newsletter</a>
+                            <a>Events</a>
+                            <a>Help centre</a>
+                            <a>Tutorials</a>
+                            <a>Support</a>
+                        </div>
+
+                        <div class="footer-column">
+                            <p>Social</p>
+                            <a>Twitter</a>
+                            <a>LinkedIn</a>
+                            <a>Facebook</a>
+                            <a>GitHub</a>
+                            <a>AngelList</a>
+                            <a>Dribbble</a>
+                        </div>
+
+                        <div class="footer-column">
+                            <p>Legal</p>
+                            <a>Terms</a>
+                            <a>Privacy</a>
+                            <a>Cookies</a>
+                            <a>Licenses</a>
+                            <a>Settings</a>
+                            <a>Contact</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="footer-content">
+                <p>© 2077 Untitled UI. All rights reserved.</p>
+                <div class="social-content">
+                    <img src="assets/x.png" alt="X icon">
+                    <img src="assets/in.png" alt="LinkedIn icon">
+                    <img src="assets/github.png" alt="Dribbble icon">
+                    <img src="assets/facebook.png" alt="Dribbble icon">
+                    <img class="logo-heidth" src="assets/2palts.png" alt="Dribbble icon">
+                    <img src="assets/grey-backet.png" alt="Dribbble icon">
+                    <img class="logo-heidth" src="assets/insta.png" alt="Dribbble icon">
+                </div>
+            </section>
+        </footer>
+        <script src="home.js"></script>
+    
+        <!-- Кнопка чата -->
+        <button id="chat-toggle" class="chat-button">
+            <img src="assets/chat.png" alt="Chat" />
+        </button>
+        
+        <!-- Окно чата -->
+        <div id="chat-box" class="chat-box hidden">
+            <div class="chat-header">
+            <h4>Chat</h4>
+            <button id="chat-close">&times;</button>
+            </div>
+            <div id="chat-messages" class="chat-messages"></div>
+            <div class="chat-input">
+            <input type="text" id="chat-text" placeholder="Type a message..." />
+            <button id="chat-send">Send</button>
+            </div>
+        </div>
+    </body>
+</html>
