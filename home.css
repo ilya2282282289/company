@@ -1166,3 +1166,50 @@ textarea{
   animation: chatClose 0.3s forwards;
   pointer-events: none;
 }
+
+@media screen and (max-width: 768px) {
+  /* Переместить фильтры наверх */
+  #filter-panel {
+    order: -1;
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  /* Центрировать и перенести фильтры наверх */
+  .filters-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Скрыть первые 2 кнопки-переключателя карточек */
+  .view-toggle button:nth-child(1),
+  .view-toggle button:nth-child(2) {
+    display: none;
+  }
+
+  /* Сделать карточки во всю ширину */
+  .team-card {
+    width: 100% !important;
+    flex-direction: row !important;
+    align-items: center;
+    padding: 1rem;
+  }
+
+  /* Убедиться, что изображение не слишком большое */
+  .team-card img {
+    max-width: 60px;
+    height: auto;
+  }
+
+  /* Текст и кнопки справа от изображения */
+  .team-card .content {
+    flex: 1;
+    padding-left: 1rem;
+  }
+
+  /* Выравнивание текста в карточке */
+  .team-card h3,
+  .team-card p {
+    text-align: left;
+  }
+}

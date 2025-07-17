@@ -245,8 +245,9 @@ function renderCards() {
   const favorits = filtered.filter(t => t.isFavorit).length;
   favoritsText.innerText = `Favorits: ${favorits}`;
 
-  filtered.forEach((teammate, index) => {
-    const card = createCard(teammate, index);
+  filtered.forEach(teammate => {
+    const globalIndex = teammates.indexOf(teammate); // Получаем индекс в полном массиве
+    const card = createCard(teammate, globalIndex); // Передаём именно его
     teamCardsEl.appendChild(card);
   });
 }
